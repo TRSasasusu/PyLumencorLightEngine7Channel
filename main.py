@@ -37,7 +37,7 @@ class LLE:
             intensity = 255
 
         if light in {LLE.Light.BLUE, LLE.Light.TEAL}:
-            light_code = 1 if light == LLE.Light.BLUE else 0
+            light_code = 1 if light == LLE.Light.BLUE else 2
             iic_addr = '1A'
         else:
             light_code = 2 ** (3 - light)
