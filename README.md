@@ -1,3 +1,5 @@
+[![PyPI version](https://badge.fury.io/py/lle7ch.svg)](https://badge.fury.io/py/lle7ch)
+
 # lle7ch (PyLumencorLightEngine7Channel)
 Controls [SOLA light engine](https://lumencor.com/products/sola-light-engine/). It covers [this document](https://lumencor.com/wp-content/uploads/sites/11/2016/02/Spectra-TTL-IF-Doc.pdf).
 
