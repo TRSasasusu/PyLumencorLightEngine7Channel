@@ -45,8 +45,10 @@ class LLE:
 
         self._send('53{}030{:01X}F{:02X}050'.format(iic_addr, light_code, 255 - intensity))
 
-    #def read_temperature(self) -> float:
-    #    self._send('53910250')
+    def read_temperature(self) -> float:
+        self._send('53910250')
+        code = self.serial.read(2)
+        return int.from_bytes(code, 'big') * 0.125
 
     def _send(self, code: str):
         self.serial.write(bytes.fromhex(code))
