@@ -43,7 +43,7 @@ class LLE:
             light_code = 2 ** (3 - light)
             iic_addr = '18'
 
-        self._send('53{}030{:01X}F{:02X}050'.format(iic_addr, light_code, intensity))
+        self._send('53{}030{:01X}F{:02X}050'.format(iic_addr, light_code, 255 - intensity))
 
     #def read_temperature(self) -> float:
     #    self._send('53910250')
