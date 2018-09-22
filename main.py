@@ -47,8 +47,10 @@ class LLE:
 
     def read_temperature(self) -> float:
         self._send('53910250')
-        code = self.serial.read(2)
-        return int.from_bytes(code, 'big') * 0.125
+        hex_code = self.serial.read(2).hex()
+        bin_code = '00' + bin(int(hex_code, 16))[2:].zfill(8)[:9]
+        int_code = int(bin_code, 2)
+        return int_code * 0.125
 
     def _send(self, code: str):
         self.serial.write(bytes.fromhex(code))
