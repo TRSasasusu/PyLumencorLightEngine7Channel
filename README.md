@@ -3,7 +3,7 @@ Controls [SOLA light engine](https://lumencor.com/products/sola-light-engine/). 
 
 ## Usage
 ```python
->>> from main import LLE
+>>> from lle7ch import LLE
 >>> lle = LLE()
 >>> lle.enable_lights_disable_others({LLE.Light.RED, LLE.Light.BLUE}) # Enable Red and Blue LED, and disable other lights.
 >>> lle.tune_intensity(LLE.Light.RED, 128) # Set intensity of Red LED as 128. (Min: 0, Max: 255)
