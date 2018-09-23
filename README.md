@@ -3,6 +3,11 @@
 # lle7ch (PyLumencorLightEngine7Channel)
 Controls [SOLA light engine](https://lumencor.com/products/sola-light-engine/). It covers [this document](https://lumencor.com/wp-content/uploads/sites/11/2016/02/Spectra-TTL-IF-Doc.pdf).
 
+## Install
+```
+pip install lle7ch
+```
+
 ## Usage
 ```python
 >>> from lle7ch import LLE
