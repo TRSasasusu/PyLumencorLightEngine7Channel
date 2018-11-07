@@ -1,0 +1,24 @@
+set g,4
+on g
+wait 5
+
+set u,38
+on u,g
+wait 5
+
+on g
+wait 5
+
+set u,128
+on u,g
+wait 5
+
+on g
+wait 5
+
+set u,38
+on u,g
+wait 5
+
+on g
+wait 5
