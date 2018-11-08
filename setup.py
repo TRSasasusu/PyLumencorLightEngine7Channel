@@ -4,14 +4,16 @@ from setuptools import setup
 
 
 def _requires_from_file(filename):
-    return open(filename).read().splitlines()
+    return _read_from_file(filename).splitlines()
 
+def _read_from_file(filename):
+    return open(filename).read()
 
 setup(
     name='lle7ch',
-    version='0.2',
+    version='1.0',
     description='Controls SOLA light engine.',
-    long_description=_requires_from_file('README.md'),
+    long_description=_read_from_file('README.md'),
     long_description_content_type="text/markdown",
     url='https://github.com/TRSasasusu/PyLumencorLightEngine7Channel',
     author='kaito kishi',
