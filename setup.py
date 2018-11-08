@@ -27,4 +27,7 @@ setup(
         'Topic :: Scientific/Engineering :: Bio-Informatics',
         'Topic :: Scientific/Engineering :: Visualization',
     ],
+    entry_points = {
+        'console_scripts': ['lleplan=lle7ch.lleplan:main'],
+    },
 )
