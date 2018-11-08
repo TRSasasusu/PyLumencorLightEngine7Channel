@@ -9,6 +9,7 @@ pip install lle7ch
 ```
 
 ## Usage
+### From Python Script
 ```python
 >>> from lle7ch import LLE
 >>> lle = LLE()
@@ -18,6 +19,21 @@ pip install lle7ch
 >>> lle.read_temperature()
 40.0
 >>>
+```
+### CLI Tool
+You can make a plan to control LLE automatically.  
+`r: LLE.Light.RED, g: LLE.Light.GREEN, c: LLE.Light.CYAN, u: LLE.Light.UV, b: LLE.Light.BLUE, t: LLE.Light.TEAL`
+
+```bash
+$ cat plan.txt
+set g,128
+on g
+wait 5
+
+set b,255
+on b,g
+wait 5
+$ lleplan plan.txt
 ```
 
 ## License

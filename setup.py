@@ -11,6 +11,8 @@ setup(
     name='lle7ch',
     version='0.2',
     description='Controls SOLA light engine.',
+    long_description=_requires_from_file('README.md'),
+    long_description_content_type="text/markdown",
     url='https://github.com/TRSasasusu/PyLumencorLightEngine7Channel',
     author='kaito kishi',
     author_email='trsasasusu@gmail.com',
