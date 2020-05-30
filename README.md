@@ -16,7 +16,7 @@ pip install lle7ch
 >>> lle.enable_lights_disable_others({LLE.Light.RED, LLE.Light.BLUE}) # Enable Red and Blue LED, and disable other lights.
 >>> lle.tune_intensity(LLE.Light.RED, 128) # Set intensity of Red LED as 128. (Min: 0, Max: 255)
 >>> lle.enable_lights_disable_others({}) # Disable all lights.
->>> lle.read_temperature()
+>>> lle.read_temperature() # WARNING: this result may be wrong... please give me PR if you can fix this method.
 40.0
 >>>
 ```
